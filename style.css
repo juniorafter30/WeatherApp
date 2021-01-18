@@ -84,6 +84,7 @@ input {
   border: none;
   color: white;
   margin-left: 25px;
+  font-size: 16px;
 }
 
 button {
@@ -112,4 +113,11 @@ button {
   text-align: center;
   margin-top: 35px;
   font-size: 20px;
+}
+
+.warning {
+  color: RED;
+  margin-left: 25px;
+  margin-top: 10px;
+  font-size: 13px;
 }

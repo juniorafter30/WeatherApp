@@ -19,17 +19,18 @@ let $city;
 let url;
 
 const getWeather = () => {
-    $city = input.value;
+    $city = (!input.value) ? 'Warsaw' : input.value;
     url = apiLink + $city + apiKey + units;
 
     axios.get(url)
     .then(res => {
-        console.log(res)
         temp.innerText = Math.floor(res.data.main.temp) + " °C";
         humidity.innerText = res.data.main.humidity + '%';
         pressure.innerText = res.data.main.pressure + ' hPa';
         cityName.textContent = res.data.name;
         weather.innerText = res.data.weather[0].main;
+        input.value = '';
+        warning.textContent = '';
 
         const imageId = res.data.weather[0].id;
         
@@ -50,13 +51,15 @@ const getWeather = () => {
         }else {
             photo.setAttribute('src', 'images/unknown.png')
         };
-    
         
-        } );
+        
+        
+        })
+        .catch(() => warning.textContent = "That's not a city name");
 
 
     
 };
-
-btn.addEventListener('click', getWeather());
+getWeather();
+btn.addEventListener('click', getWeather);
 
