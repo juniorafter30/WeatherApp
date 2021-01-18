@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  height: 100vh;
+  background: #3494e6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ec6ead,
+    #3494e6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ec6ead,
+    #3494e6
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+  background: #120435;
+  width: 600px;
+  height: 300px;
+  position: fixed;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, 50%);
+  border: 3px solid #ffffff;
+  border-radius: 22px;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 5px 50px rgba(58, 37, 37, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 5px 50px rgba(58, 37, 37, 0);
+}
+.title {
+  margin: 10px;
+  text-align: center;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+}
+
+.heading p {
+  margin: auto;
+}
+
+.weather-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.weather-info p {
+  margin: auto;
+}
+
+.main-info {
+  padding: 35px;
+  margin: auto;
+}
+
+h1 {
+  padding: 10px;
+}
+
+input {
+  background: transparent;
+  border: none;
+  color: white;
+}
+
+button {
+  background: transparent;
+  font-size: 13px;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 15%;
+}
