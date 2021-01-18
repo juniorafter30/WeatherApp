@@ -5,6 +5,9 @@
 }
 
 main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: "Poppins", sans-serif;
   color: #fff;
   height: 100vh;
@@ -23,8 +26,8 @@ main {
 
 .container {
   background: #120435;
-  width: 600px;
-  height: 300px;
+  width: 800px;
+  height: 400px;
   position: fixed;
   left: 50%;
   bottom: 50%;
@@ -45,6 +48,7 @@ main {
   align-items: center;
   justify-content: center;
   border: 1px solid #fff;
+  text-transform: uppercase;
 }
 
 .heading p {
@@ -61,6 +65,7 @@ main {
 }
 
 .main-info {
+  width: 100%;
   padding: 35px;
   margin: auto;
 }
@@ -69,10 +74,16 @@ h1 {
   padding: 10px;
 }
 
+h3 {
+  font-size: 30px;
+  padding: 10px;
+  margin-left: 15px;
+}
 input {
   background: transparent;
   border: none;
   color: white;
+  margin-left: 25px;
 }
 
 button {
@@ -82,4 +93,23 @@ button {
   padding: 10px 15px;
   cursor: pointer;
   border-radius: 15%;
+}
+
+.main-info {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.photo {
+  width: 100px;
+  height: 100px;
+  margin-right: 90px;
+}
+
+.weather-info p {
+  margin: auto;
+  text-align: center;
+  margin-top: 35px;
+  font-size: 20px;
 }
