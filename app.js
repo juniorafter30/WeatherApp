@@ -19,7 +19,7 @@ let $city;
 let url;
 
 const getWeather = () => {
-    $city = (!input.value) ? 'Warsaw' : input.value;
+    $city = (!input.value) ? 'New York' : input.value;
     url = apiLink + $city + apiKey + units;
 
     axios.get(url)
@@ -55,7 +55,7 @@ const getWeather = () => {
         
         
         })
-        .catch(() => warning.textContent = "That's not a city name");
+        
 
 
     
